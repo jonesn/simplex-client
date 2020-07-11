@@ -7,9 +7,7 @@
  :dependencies
  [[rum "0.12.3"]]
 
- :builds
- {:app {:target :browser
-        :dev-http {8080 "target/"}
-        :output-dir "target/js"
-        :asset-path "/assets"
-        :modules {:main {:entries [nz.co.arachnid.simplexclient.core]}}}}}
+ :dev-http {8080 "public/"}
+ :builds {:app {:target :browser
+                :output-dir "public/js"
+                :modules {:main {:entries [nz.co.arachnid.simplexclient.core]}}}}}
